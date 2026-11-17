@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Forge · MCP OAuth client metadata</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #111113;
+        --card: #1c1c1e;
+        --text: #f4f4f5;
+        --muted: #a1a1aa;
+        --ember: #e85d2a;
+        --line: #2a2a2e;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(ellipse 80% 50% at 50% -10%, rgba(232, 93, 42, 0.18), transparent),
+          var(--bg);
+        color: var(--text);
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+      }
+      main {
+        width: min(40rem, 100%);
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        padding: 2rem;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        margin-bottom: 1.25rem;
+      }
+      .brand img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 0.75rem;
+      }
+      h1 {
+        margin: 0;
+        font-size: 1.5rem;
+        letter-spacing: -0.02em;
+      }
+      p { color: var(--muted); line-height: 1.55; }
+      a { color: var(--ember); }
+      code {
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: 0.9em;
+        background: #0d0d0f;
+        padding: 0.15rem 0.4rem;
+        border-radius: 0.35rem;
+      }
+      ul { padding-left: 1.2rem; color: var(--muted); }
+      li { margin: 0.4rem 0; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="brand">
+        <img src="/forge-logo.png" alt="Forge" />
+        <h1>Forge MCP client</h1>
+      </div>
+      <p>
+        This host publishes Forge’s
+        <strong>Client ID Metadata Document (CIMD)</strong>
+        for MCP OAuth. Authorization servers such as Vercel MCP fetch it when
+        Forge connects.
+      </p>
+      <ul>
+        <li>
+          Metadata:
+          <a href="/oauth/client-metadata.json"><code>/oauth/client-metadata.json</code></a>
+        </li>
+        <li>
+          Logo:
+          <a href="/forge-logo.png"><code>/forge-logo.png</code></a>
+        </li>
+      </ul>
+      <p>
+        Point Forge at the metadata URL with
+        <code>MCP_OAUTH_CLIENT_METADATA_URL</code>.
+      </p>
+    </main>
+  </body>
+</html>

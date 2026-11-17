@@ -1,0 +1,12 @@
+{
+  "name": "forge-cimd",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Forge MCP OAuth Client ID Metadata Document (CIMD) host",
+  "scripts": {
+    "apply-url": "bash scripts/apply-base-url.sh",
+    "validate": "bash scripts/validate.sh",
+    "dev": "python3 -m http.server 4173 --directory public",
+    "deploy": "npx --yes vercel@latest ./public --prod"
+  }
+}
