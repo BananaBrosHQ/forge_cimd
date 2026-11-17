@@ -1,8 +1,8 @@
 {
-  "client_id": "https://REPLACE_WITH_YOUR_HOST/oauth/client-metadata.json",
+  "client_id": "https://forgecimd.vercel.app/oauth/client-metadata.json",
   "client_name": "Forge",
-  "client_uri": "https://REPLACE_WITH_YOUR_HOST",
-  "logo_uri": "https://REPLACE_WITH_YOUR_HOST/forge-logo.png",
+  "client_uri": "https://forgecimd.vercel.app",
+  "logo_uri": "https://forgecimd.vercel.app/forge-logo.png",
   "redirect_uris": [
     "http://localhost/callback",
     "http://127.0.0.1/callback",
@@ -18,6 +18,6 @@
   "token_endpoint_auth_method": "none",
   "application_type": "native",
   "contacts": [],
-  "policy_uri": "https://REPLACE_WITH_YOUR_HOST/policy",
-  "tos_uri": "https://REPLACE_WITH_YOUR_HOST/terms"
+  "policy_uri": "https://forgecimd.vercel.app/policy",
+  "tos_uri": "https://forgecimd.vercel.app/terms"
 }
